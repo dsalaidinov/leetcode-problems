@@ -1,6 +1,6 @@
 # Algorithms and Data Structures Practice
 
-This repository contains my solutions to algorithm and data structure problems, primarily from **LeetCode**, as part of my preparation for technical interviews at MAANG (Meta, Amazon, Apple, Netflix, Google).
+This repository contains my solutions to algorithm and data structure problems, primarily from **LeetCode**, as part of my preparation for technical interviews at MAANG (Meta, Amazon, Apple, Netflix, Google). 
 
 ## Project Structure
 
@@ -48,6 +48,10 @@ Here are the key topics being covered:
 10. Bit Manipulation
 11. Math and Number Theory
 12. Advanced Topics (Segment Trees, Tries, Suffix Arrays, etc.)
+
+## LeetCode Profile
+
+You can find all my solved problems and solutions on my [LeetCode profile](https://leetcode.com/u/dsalaidinov/).
 
 ## How to Contribute
 
