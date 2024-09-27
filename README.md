@@ -23,7 +23,7 @@ Each problem is organized by its topic and includes a description, the solution,
 ```
 
 Each directory contains:
-- `problem_name.py`
+- `problem_name.rs`
 - `README.md` (with a description of the problem, the approach, and complexity analysis)
 
 ## Daily Problem Solving Schedule
