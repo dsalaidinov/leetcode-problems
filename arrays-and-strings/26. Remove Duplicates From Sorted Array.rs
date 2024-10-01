@@ -1,3 +1,5 @@
+Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 impl Solution {
     pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
         if nums.is_empty() {
