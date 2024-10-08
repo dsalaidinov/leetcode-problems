@@ -1,3 +1,5 @@
+Link: https://leetcode.com/problems/maximum-average-subarray-i
+
 use core::cmp::max;
 
 impl Solution {
