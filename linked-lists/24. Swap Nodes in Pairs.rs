@@ -1,5 +1,8 @@
 Link: https://leetcode.com/problems/swap-nodes-in-pairs/
 
+Time Complexity: O(n)
+Space Complexity: O(1)
+
 impl Solution {
     pub fn swap_pairs(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut dummy = Some(Box::new(ListNode { val: 0, next: head }));
@@ -30,3 +33,26 @@ impl Solution {
         dummy.unwrap().next
     }
 }
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+impl Solution {
+    pub fn swap_pairs(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        if head.is_none() || head.as_ref().unwrap().next.is_none() {
+            return head;
+        }
+
+        let mut first = head.unwrap();
+        let mut second = first.next.take().unwrap();
+
+        first.next = Self::swap_pairs(second.next);
+
+        second.next = Some(first);
+
+        Some(second)
+    }
+}
+
+
+
