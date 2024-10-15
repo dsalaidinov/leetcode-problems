@@ -5,7 +5,7 @@ impl Solution {
         let mut stack = Vec::new();
 
         for c in s.chars() {
-            if stack.len() != 0 && stack[stack.len()-1] == c {
+            if !stack.is_empty() && stack[stack.len()-1] == c {
                 stack.pop();
             } else {
                 stack.push(c);
