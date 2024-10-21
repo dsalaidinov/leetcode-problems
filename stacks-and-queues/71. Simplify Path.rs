@@ -1,3 +1,4 @@
+Link: https://leetcode.com/problems/simplify-path/
 impl Solution {
     pub fn simplify_path(path: String) -> String {
         let mut stack = Vec::new();
