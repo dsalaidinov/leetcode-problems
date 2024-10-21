@@ -1,3 +1,4 @@
+Link: https://leetcode.com/problems/number-of-recent-calls/
 use std::collections::VecDeque;
 
 struct RecentCounter {
