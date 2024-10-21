@@ -1,3 +1,5 @@
+Link:   https://leetcode.com/problems/min-stack/
+
 struct MinStack {
     stack: Vec<i32>,
     min_stack: Vec<i32>,
