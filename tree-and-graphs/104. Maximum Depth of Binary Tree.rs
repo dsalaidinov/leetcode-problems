@@ -33,3 +33,36 @@ impl Solution {
         }
     }
 }
+
+// ---------------------------------------------------------
+
+//Solution 2: using stack
+use core::cmp::max;
+use std::rc::Rc;
+use std::cell::RefCell;
+impl Solution {
+    pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
+        if root.is_none() {
+            return 0;
+        }
+
+        let mut stack = vec![(root.clone(), 1)];
+        let mut max_depth = 0;
+
+        while let Some((node, depth)) = stack.pop() {
+            if let Some(n) = node {
+                max_depth = max_depth.max(depth);
+
+                let n_borrowed = n.borrow();
+                if n_borrowed.left.is_some() {
+                    stack.push((n_borrowed.left.clone(), depth + 1));
+                }
+                if n_borrowed.right.is_some() {
+                    stack.push((n_borrowed.right.clone(), depth + 1));
+                }
+            }
+        }
+
+        max_depth
+    }
+}
